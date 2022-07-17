@@ -1,0 +1,138 @@
+:root {
+    --green: hsl(158, 36%, 37%);
+    --darker: hsl(158, 35%, 23%);
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+color {
+    background-color: hsl(158, 36%, 37%), hsl(212, 21%, 14%), ;
+}
+
+
+
+h3,
+#new-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+
+.product,
+.texts {
+    display: inline-block;
+}
+
+.product {
+    width: 300px;
+    height: 455px;
+}
+
+.texts {
+    padding: 28px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.grid-container {
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-areas:
+        'product texts';
+    border-radius: 15px;
+    width: 600px;
+    height: 60%;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+#goods {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: inherit;
+    height: inherit;
+}
+
+#old-price,
+#new-price {
+    display: inline;
+}
+
+#new-price {
+    color: var(--green);
+    font-size: x-large;
+    margin-right: 48px;
+    margin-left: 21px;
+    margin-bottom: 3px;
+    margin-top: 23px;
+
+}
+
+.words {
+    color: hsl(228, 12%, 48%);
+}
+
+.attribution {
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    color: #ffffff;
+    background: var(--green);
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    border: hsl(0, 0%, 100%);
+}
+
+.btn:hover {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--darker);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 380px) {
+    #goods{
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .grid-container{
+        width: 350px;
+        grid-template-areas: 
+        'product' 
+        'texts'
+        ;
+    }
+    .attribution{
+        display: none;
+    }
+    .product{
+        width: inherit;
+        height: auto;
+    }
+    .words{
+        width: 310px;
+    }
+    .texts{
+        width: auto;
+        padding: 25px;
+    }
+
+    .btn{
+        width: 100%;
+    }
+}
