@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Edema-wxd/product_page)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://edema-wxd.github.io/product_page/)
 
 ## My process
 
